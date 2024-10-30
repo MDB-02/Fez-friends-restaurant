@@ -460,6 +460,7 @@ hr{
 }
 
 .notation p{
+    font-size: 12px;
     margin-top: 10px;
     color: rgb(255, 0, 0);
     text-transform: capitalize;
