@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>about</title>
+</head>
+<body>
+    <a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html"><img class="tripadvisorIcon" src="tripadvisor.png" alt="fez&friends"></a>
+    <nav> 
+        <ul class="sidebar">
+            <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a id="a" href="/index.html">home</a></li>
+            <li><a id="a" class="reserve" href="#">reserve now</a></li>
+            <li><a id="a" class="cooking" href="/Cooking Class/cooking.html">cooking class</a></li>
+            <li><a id="a" href="/contact/contact.html">contact</a></li>
+            <li><a id="a" href="/menu/menu.html">menu</a></li>
+            <li><a id="a" href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">review us</a></li>
+            <li><div class="iconsOfSidebar">
+                <a class="insta" href="https://www.instagram.com/fezandfriendss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="instagram.png" alt="instagram icon"></a>
+                <a class="trip" href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html"><img src="tripadvisor.png" alt="tripadvisor icon"></a>
+                <a class="loc" href="https://maps.app.goo.gl/qwj2ygvyDY1HjWSV8"><img src="map.png" alt="map icon"></a>
+            </div></li>
+        </ul>
+        <ul>
+            <li><img class="logo" src="IMG-20241012-WA0011-removebg-preview.png" alt="logo"></li>
+            <li class="hideOnMobile"><a href="/index.html">home</a></li>
+            <li class="hideOnMobile"><a class="reserve" href="#">reserve now</a></li>
+            <li class="hideOnMobile"><a class="cooking" href="/Cooking Class/cooking.html">cooking class</a></li>
+            <li class="hideOnMobile"><a href="/contact/contact.html">contact</a></li>
+            <li class="hideOnMobile"><a href="/menu/menu.html">menu</a></li>
+            <li class="hideOnMobile"><a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">review us</a></li>
+            <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+    
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+            const icons = document.querySelector('.icons');
+            icons.style.display = 'none';
+        }
+
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+            const icons = document.querySelector('.icons');
+            icons.style.display = 'flex';
+        }
+    </script>
+    <div class="container">
+   
+            <h3 class="about">about</h3>
+            <p class="aboutP">
+                Fez & Friends is a fine and ideal Cafe & Restaurant <br>
+                to dine in or grab a drink while enjoying <br>
+                the Company of Family and Friends <br>
+                in a Cozy atmosphere and relaxing <br>
+                with a chill music background. <br>
+                The Restaurant offers such a Yummy mix of Delicious Moroccan <br>
+                and international foods..also fresh and cool beverages. <br>
+                The Service is Quick, casual, and friendly, and the staff <br>
+                are attentive, and always happy to help so please feel <br>
+                free to ask..our client is king. the whole spot is charming, <br>
+                beautifully decorated with modern and vintage furniture settled in a perfect location <br>
+                downtown..just a few steps outside the blue gate..easy to find <br>
+            </p>
+            <h3> <a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">tripadvisor</a> Reviews summary</h3>
+            <p class="aboutP">Fez And Friends has captivated diners with its <br>
+                 delightful Moroccan-inspired cuisine, <br>
+                  earning praise for both its enticing flavors and cozy atmosphere. <br>
+                   The inviting blend of European and Moroccan decor, <br>
+                    coupled with live music, enhances the dining experience, <br>
+                    a detail not lost on its guests. <br>
+
+                The service at Fez And Friends stands out, <br>
+                 with reviewers highlighting the staff's friendliness <br>
+                 and thoughtful gestures like complimentary drinks. <br>
+                  Additionally, the restaurant is celebrated for providing <br>
+                   excellent value, offering both high-quality food and <br>
+                    exceptional service at reasonable prices. <br>
+
+            </p>
+
+            <h3 class="cuisines">CUISINES</h3>
+            <p>Moroccan, Pizza, International, Mediterranean, Healthy</p>
+
+            <h3 class="diets">special diets</h3>
+            <p>Vegetarian Friendly, Vegan Options</p>
+
+            <h3 class="meals">meals</h3>
+            <p>Breakfast, Brunch, Lunch, Dinner</p>
+
+            <h3 class="features">FEATURES</h3>
+            <p>Takeout,  Reservations,Delivery, Outdoor Seating, <br>
+            Street Parking, Television, Accepts Mastercard, <br>
+            Accepts Visa, Cash, Free Wifi, Accepts Credit Cards, <br>
+            Table Service, Live Music,Family style, reasonable prices, <br>
+             Non-smoking restaurant(allowed on the outdoor Seating)</p>
+            <h3></h3>
+    </div>
+
+    <hr>
+    <div class="footer">
+        <div class="texts">
+            <p> <a class="copy-icon" href="#">©</a>  2024. All rights reserved.</p>
+            <p class="maker">created by <a href="#">MDB-02</a></p>
+        </div>
+        <div class="icons">
+            <a class="insta" href="https://www.instagram.com/fezandfriendss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="instagram.png" alt="instagram icon"></a>
+            <a class="trip" href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html"><img src="tripadvisor.png" alt="tripadvisor icon"></a>
+            <a class="loc" href="https://maps.app.goo.gl/qwj2ygvyDY1HjWSV8"><img src="map.png" alt="map icon"></a>
+        </div>
+    </div>
+
+    <div class="footerNav">
+        <ul>
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/Cooking Class/cooking.html">cooking class</a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">Review us</a></li>
+            <li><a href="/menu/menu.html">menu</a></li>
+            <li><a href="/contact/contact.html">contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

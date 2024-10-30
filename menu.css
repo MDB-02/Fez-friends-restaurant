@@ -1,0 +1,502 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+:root{
+    --footer-text-color:rgb(121, 116, 116);
+    --main-color: rgb(54, 51, 51);
+    --nav-Color: rgb(34, 33, 33);
+    --second-Color: #027f70;
+    --text-color: blanchedalmond;
+    --hover-shadow-color: #0a7b9a;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    background-color: var(--main-color);
+}
+
+nav
+{
+    top: 0;
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    background-color: var(--nav-Color);
+    box-shadow: var(--second-Color) 1px 2px 5px 1px;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+nav li{
+    height:60px;
+}
+
+nav a{
+    margin-top: 10px;
+    height: 50%;
+    padding: 0 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    box-shadow: 0 0 10px var(--hover-shadow-color), 0 0 20px var(--second-Color);
+    transition: transform 0.01s ease, box-shadow 0.01s ease;
+
+}
+
+nav li:first-child{
+    margin-right:auto;
+    width: auto;
+}
+nav .sidebar li{
+    margin-left: 20px;
+}
+.logo{
+    top: 3px;
+    pointer-events: none;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+}
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    background-color: rgba(34, 33, 33, 0.1);
+    backdrop-filter:blur(10px);
+    box-shadow: -3px 0 5px var(--second-Color);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.iconsOfSidebar a img{
+    text-align: center;
+    width:25px;
+    height: 25px;
+}
+
+.iconsOfSidebar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sidebar li #a::before{
+    content: '';
+    width:5px;
+    height: 200%;
+    background-color: var(--second-Color);
+    position:relative;
+    left:-3px;
+    top:0;
+    border-radius:3px;
+}
+
+.sidebar li{
+    width:auto;
+}
+
+a{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.lang-menu{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    padding-bottom: 5px;
+    border: var(--second-Color) solid 1px;
+    border-radius: 5px;
+    background-color: rgba(34, 33, 33, 0.1);
+    backdrop-filter:blur(10px);
+    box-shadow: -3px 0 5px var(--second-Color);
+    width: 150px;
+
+    
+}
+
+
+.reserve,
+.cooking{
+    animation: textAnimation 3s ease-in-out infinite;
+}
+
+.reserve::before,
+.cooking::before{
+background: linear-gradient(90deg, #2c73ba, #2de07b, #cb592c);
+animation: glowAnimation 3s infinite ease-in-out;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+background-size: 200%;
+}
+
+@keyframes textAnimation{
+    0%{
+        color: var(--second-Color);
+    }
+    50%{
+        color: brown;
+    }
+
+    100%{
+        color: var(--second-Color);
+    }
+}
+
+@keyframes glowAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes iconsAnimation{
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width: 40px;
+        height:40px;
+    }
+    100%{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+.close-lang{
+    position: relative;
+    left: 5px;
+    padding-top: 10px;
+}
+
+.lang-menu li a{
+    text-transform: capitalize;
+    margin-top: 1px;
+    height: auto;
+ 
+}
+
+.tripadvisorIcon{
+position: fixed;
+right: 15px;
+bottom: 90px;
+z-index: 10000;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+box-shadow: var(--second-Color) 2Px 2px 6px 1px;
+animation: iconsAnimation 3s infinite ease-in-out;
+}
+
+.EnglishContainer{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spanishContainer{
+    padding-top: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.italianContainer{
+    padding-top: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frenchContainer{
+    padding-top: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.arabicContainer{
+    padding-top: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.breakfastMenu{
+    display: flex;
+    justify-content: center;
+}
+
+.breakfastMenu img{
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+.EnglishNote{
+display: flex;
+}
+.SpanishNote{
+    display: none;
+}
+
+.ItalianNote{
+    display: none;
+}
+
+.FrenchNote{
+    display: none;
+}
+
+.ArabicNote{
+    display: none;
+}
+
+.mainMenu{
+    z-index: 10;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+
+.mainMenu img{
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+}
+
+.pezzireaMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pezzireaMenu img{
+    margin-top: 30px;
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.lang-icon{
+    position: relative;
+    width: 90px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+hr{
+    margin-top: 20px;
+    border:solid 1px var(--second-Color);
+    color: var(--second-Color);
+    box-shadow: var(--second-Color) 1px 1px 6px 1px;
+}
+
+.footer{
+    z-index: 10;
+   padding-bottom: 30px;
+    background-color: var(--nav-Color);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer .texts p{
+    text-transform: capitalize;
+    color:var(--footer-text-color); 
+}
+
+.footer .texts p a{
+    color: var(--second-Color);
+}
+.copy-icon{
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.footer .icons
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+}
+
+.footer .icons .insta::after{
+    position: absolute;
+    bottom: 6px;
+    content: 'instagram';
+    color: var(--footer-text-color);
+    text-transform: capitalize;
+}
+
+.footer .icons .trip::after{
+    position:absolute;
+    bottom:6px;
+    content: 'tripadvisor';
+    color: var(--footer-text-color);
+    text-transform: capitalize;
+}
+
+.footer .icons .loc::after
+{
+    position: absolute;
+    bottom: 6px;
+    content: 'location';
+    color: var(--footer-text-color);
+    text-transform: capitalize;
+}
+
+.footer .icons .insta,
+.footer .icons .trip,
+.footer .icons .loc
+{
+    position: relative;
+}
+
+.footer .icons a img
+{
+    width:25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.footerNav{
+    z-index: 10;
+    padding-bottom: 90px;
+    background-color: var(--nav-Color);
+}
+.footerNav ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer .texts .maker a
+{
+    text-transform: uppercase;
+    color: var(--second-Color);
+}
+
+.footerNav ul li a{
+    color: rgb(121, 116, 116);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
+}
+
+.footerNav ul li a:focus
+{
+    color: var(--second-Color);
+}
+
+.footer .texts{
+    margin-top: 40px;
+}
+.notation{
+    z-index: 20;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-Color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.notation p{
+    margin-top: 10px;
+    color: rgb(255, 0, 0);
+    text-transform: capitalize;
+    font-weight: 590;
+}
+
+.menu{
+    display: none;
+    margin-right: 20px;
+}
+@media (max-width:1206px){
+.hideOnMobile{
+    display: none;
+}
+.footer .icons .insta::after,
+.footer .icons .trip::after,
+.footer .icons .loc::after{
+    display: none;
+}
+.menu{
+    display: block;
+}
+body{
+    background-image: url(menu.png);
+}
+}
+
+@media (max-width:450px){
+    .footerNav ul{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .footerNav ul li{
+        margin-top: 10px;
+    }
+    body{
+        background-image: url(menu.png);
+    }
+    }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "cuG9mI9MtBt5qTyGK",
+      });
+   })();
+</script>
+</head>
+<body>
+  <a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html"><img class="tripadvisorIcon" src="tripadvisor.png" alt="fez&friends"></a>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a id="a" href="/index.html">home</a></li>
+            <li><a id="a" class="reserve" href="#">reserve now</a></li>
+            <li><a id="a" class="cooking" href="/Cooking Class/cooking.html">cooking class</a></li>
+            <li><a id="a" href="/menu/menu.html">Menu</a></li>
+            <li><a id="a" href="/About/about.html">About</a></li>
+            <li><a id="a" href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">review us</a></li>
+            <li>
+                <li><div class="iconsOfSidebar">
+                    <a class="insta" href="https://www.instagram.com/fezandfriendss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="instagram.png" alt="instagram icon"></a>
+                    <a class="trip" href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html"><img src="tripadvisor.png" alt="tripadvisor icon"></a>
+                    <a class="loc" href="https://maps.app.goo.gl/qwj2ygvyDY1HjWSV8"><img src="map.png" alt="map icon"></a>
+                </div></li>
+            </li>
+        </ul>
+        <ul>
+            <li><img class="logo" src="IMG-20241012-WA0011-removebg-preview.png" alt="logo"></li>
+            <li class="hideOnMobile"><a href="/index.html">home</a></li>
+            <li class="hideOnMobile"><a class="reserve" href="#">reserve now</a></li>
+            <li><a class="hideOnMobile" id="a" href="/menu/menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a class="cooking" href="/Cooking Class/cooking.html">cooking class</a></li>
+            <li class="hideOnMobile"><a href="/About/about.html">About</a></li>
+            <li class="hideOnMobile"><a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">review us</a></li>
+            <li class="menu" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+         
+    </nav>
+    
+    
+    <div class="container">
+        <div class="custom-container">
+    <div class="custom-row">
+      <div class="intro-section">
+        <h1 class="intro-heading">Hi there!</h1>
+        <h4 class="intro-text">Get in touch with us. your opinion, feedback matters!</h4>
+        <img src="Untitled_design-removebg-preview.png" alt="">
+      </div>
+      <div class="form-section">
+        <h1 class="form-title">Fez & Friends Contact Form</h1>
+        <div class="form-group">
+          <h5 class="form-label" for="name">Name</h5>
+          <input
+            type="text"
+            class="custom-input"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group">
+          <h5 class="form-label" for="email">Email</h5>
+          <input
+            type="email"
+            class="custom-input"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <h5 class="form-label" for="message">Message</h5>
+          <textarea class="custom-textarea" id="message" rows="3" placeholder="Type your message"></textarea>
+        </div>
+        <button class="submit-btn" onclick="sendMail()">Submit</button>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  
+
+    
+        <hr>
+        <div class="footer">
+            <div class="texts">
+                <p> <a class="copy-icon" href="#">©</a>  2024. All rights reserved.</p>
+                <p class="maker">created by <a href="#">MDB-02</a></p>
+            </div>
+            <div class="icons">
+                <a class="insta" href="https://www.instagram.com/fezandfriendss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="instagram.png" alt="instagram icon"></a>
+                <a class="trip" href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html"><img src="tripadvisor.png" alt="tripadvisor icon"></a>
+                <a class="loc" href="https://maps.app.goo.gl/qwj2ygvyDY1HjWSV8"><img src="map.png" alt="map icon"></a>
+            </div>
+        </div>
+    
+        <div class="footerNav">
+            <ul>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/Cooking Class/cooking.html">cooking class</a></li>
+                <li><a href="https://www.tripadvisor.com/Restaurant_Review-g293733-d24986629-Reviews-Fez_And_Friends-Fez_Fez_Meknes.html">Review us</a></li>
+                <li><a href="/menu/menu.html">menu</a></li>
+                <li><a href="/About/about.html">about</a></li>
+            </ul>
+        </div>
+<script src="contact.js"></script>
+</body>
+</html>
